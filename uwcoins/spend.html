@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -31,7 +31,7 @@
   <h3 class="w3-center">SPEND COIN</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.</em></p><br>
 
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">SPEND COIN</button>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" id="spendcoin">SPEND COIN</button>
   </div>
 </div>
 
@@ -58,4 +58,83 @@
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script>
+    if (typeof web3 !== 'undefined') {
+        web3 = new Web3(web3.currentProvider);
+    } else {
+        // set the provider you want from Web3.providers
+        web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+    }
+    web3.eth.defaultAccount = web3.eth.accounts[0];
+    var ClubContract = web3.eth.contract([
+	{
+	    "constant": false,
+	    "inputs": [
+			{
+			    "name": "people",
+			    "type": "address"
+			}
+	    ],
+	    "name": "checkHasPaid",
+	    "outputs": [
+			{
+			    "name": "",
+			    "type": "bool"
+			}
+	    ],
+	    "payable": false,
+	    "stateMutability": "nonpayable",
+	    "type": "function"
+	},
+	{
+	    "constant": false,
+	    "inputs": [
+			{
+			    "name": "events",
+			    "type": "address"
+			}
+	    ],
+	    "name": "EventList",
+	    "outputs": [
+			{
+			    "name": "",
+			    "type": "bool"
+			}
+	    ],
+	    "payable": false,
+	    "stateMutability": "nonpayable",
+	    "type": "function"
+	},
+	{
+	    "constant": false,
+	    "inputs": [
+			{
+			    "name": "actaddress",
+			    "type": "address"
+			}
+	    ],
+	    "name": "useToken",
+	    "outputs": [],
+	    "payable": false,
+	    "stateMutability": "nonpayable",
+	    "type": "function"
+	}
+    ]);
+
+    var Club = ClubContract.at('0x06064b42C3fa0dfD36CF5610508f1C22dA2e1eBf');
+    console.log(Club);
+
+
+
+    $("spendcoin").click(function() {
+        Club.useToken('0x06064b42C3fa0dfD36CF5610508f1C22dA2e1eBf');
+    });
+
+</script>
+
 </html>
+
+
