@@ -1,1 +1,1 @@
-# uw-cryptomarket
+# University of Waterloo Fintech Club
