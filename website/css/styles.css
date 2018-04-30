@@ -1,0 +1,61 @@
+strong {
+  font-weight: normal;
+  color: #226686;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.nav-item {
+  font-size: 24pt;
+  padding: 0 1.5em;
+}
+
+.bg-parallax {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+
+.header {
+  background-color: #DDD;
+}
+
+.header h1 {
+  padding: 0.5em 4em;
+  font-weight: normal;
+}
+
+.nav-link {
+  padding: 1em;
+}
+
+.nav-item .nav-link strong {
+  font-weight: normal;
+  color: #c7e1ed;
+}
+
+.active .nav-link strong {
+  font-weight: normal;
+  color: #226686;
+}
+
+.active:after {
+  content: "";
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  left: 50%;
+  bottom: 15px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #DDD;
+}
