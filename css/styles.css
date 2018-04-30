@@ -24,7 +24,12 @@ strong {
   z-index: -100;
 }
 
+.nav2 {
+  margin-top: 10em;
+}
+
 .header {
+  width: 100vw;
   background-color: #DDD;
 }
 
@@ -58,4 +63,21 @@ strong {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid #DDD;
+}
+
+.content {
+  font-size: 16pt;
+  width: 60vw;
+  transform: translateX(20vw);
+}
+
+:target:before {
+content:"";
+display:block;
+height:13em; /* fixed header height*/
+margin:-13em 0 0; /* negative fixed header height */
+}
+
+.content-first {
+  margin-top: 13em;
 }
