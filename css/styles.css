@@ -66,6 +66,7 @@ strong {
 }
 
 .content {
+  margin: 1em 0;
   font-size: 16pt;
   width: 60vw;
   transform: translateX(20vw);
