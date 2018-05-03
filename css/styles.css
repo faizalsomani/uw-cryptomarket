@@ -82,3 +82,13 @@ margin:-13em 0 0; /* negative fixed header height */
 .content-first {
   margin-top: 13em;
 }
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+#navbarSupportedContent {
+    background-image: url('../assets/headerBG3.jpg');
+    background-size: contain;
+}
