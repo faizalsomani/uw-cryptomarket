@@ -83,12 +83,20 @@ margin:-13em 0 0; /* negative fixed header height */
   margin-top: 13em;
 }
 
-textarea {
-  width: 500px;
-  height: 150px;
+.button {
+    background-color: white; /* Green */
+    border: blue;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
 }
 
-#navbarSupportedContent {
-    background-image: url('../assets/headerBG3.jpg');
-    background-size: contain;
+body  {
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

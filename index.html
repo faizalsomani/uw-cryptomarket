@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/styles.css">
 <style>
 body, html {
     height: 100%;
-    font-family: "Inconsolata", sans-serif;
+    font-family: "Lato", sans-serif;
 
 }
 
@@ -19,7 +22,7 @@ body, html {
 <div class="w3-top" style="font-size:20px">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      <a href="#" style="text-align:center" class="w3-block w3-black"><img href="#" src="assets/logo-transparent.png" width="50" height="50"></a>
     </div>
     <div class="w3-col s3">
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
@@ -28,7 +31,10 @@ body, html {
       <a href="#partners" class="w3-button w3-block w3-black">PARTNERS</a>
     </div>
     <div class="w3-col s3">
-      <a href="#joinUs" class="w3-button w3-block w3-black">Events&Projects</a>
+      <a href="#events" class="w3-button w3-block w3-black">EVENTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#projects" class="w3-button w3-block w3-black">PROJECTS</a>
     </div>
     <div class="w3-col s3">
       <a href="#contactUs" class="w3-button w3-block w3-black">CONTACT US</a>
@@ -41,15 +47,16 @@ body, html {
   <img src="assets/headerBG2.jpg" alt="no image" id="headerImage" width="100%" height="100%">
   <div class="w3-display-middle w3-center">
     <span class="w3-text-black" style="font-size:10vw">FINTECH</span><br>
-    <span class="w3-text-black" style="font-size:4vw">Waterloo/Kitchner</span>
+    <span class="w3-text-black" style="font-size:2vw">Phrase about club</span><br>
+    <a class="button" href="#">CTA button</a>
   </div>
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class=" w3-large">
 
 <!-- About Container -->
-<div class="w3-container w3-pale-red" id="about">
+<div class="w3-container" id="about">
   <div class="w3-content" style="max-width:1000px">
 
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:30px">ABOUT FINTECH</span></h5>
@@ -65,68 +72,37 @@ body, html {
 </div>
 
 <!-- Menu Container -->
-<div class="w3-container w3-pale-red" id="partners">
+<div class="w3-container" id="partners">
   <div class="w3-content" style="max-width:1000px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Partners</span></h5>
   
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Partner</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Logo</div>
-      </a>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!--
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    <div style="width:500px; text-align:center">
+      <a href="#" style="text-align:center" ><img href="#" src="assets/logo-transparent.png" width="150" height="150"></a><br/>
+      Company: <br/>Lorem ipsum dolor sit amet, eu id leo vestibulum rem volutpat dictumst, at ut habitant dignissim dictumst suscipit commodo, quis laoreet maecenas fusce. Cursus massa odio. Ligula tortor elementum in ac bibendum justo, enim diam laoreet nullam mauris consequat donec, id vitae. Augue mollis nonummy quis nec nec, vel lorem gravida, sit nulla, ipsum per tincidunt lacus odio. Nibh sit, euismod nec, sed a vestibulum eros, dapibus eget elit at integer. Convallis est in maecenas ac massa sit, suscipit vehicula risus adipiscing, non sollicitudin pede facilisis, erat sed mauris id mollitia qui, erat eu consequat id eu ipsum. Dolor neque donec vestibulum et var
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="" style="width:100%;max-width:1000px;margin-top:32px;">
+<!-- Contact/Area Container -->
+<div class="w3-container" id="events" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Events</span></h5>
+    <div style="width:500px; text-align:center">
+      <a href="#" style="text-align:center" ><img href="#" src="assets/logo-transparent.png" width="150" height="150"></a><br/>
+      <h3>Event</h3><br/>Jan 1, 2018<br/>Location
+
+    </div>
+
   </div>
 </div>
--->
-<!-- Contact/Area Container -->
-<div class="w3-container" id="joinUs" style="padding-bottom:32px;">
+
+<div class="w3-container" id="projects" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Events and Projects</span></h5>
-    <!--
-    <p>Find us at some address at some place.</p>
-    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
-  -->
-    <p></span> Events and Projects</p>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Projects</span></h5>
+    
+    <div style="width:500px; text-align:center">
+      <a href="#" style="text-align:center" ><img href="#" src="assets/logo-transparent.png" width="150" height="150"></a><br/>
+      Company: <br/>Lorem ipsum dolor sit amet, eu id leo vestibulum rem volutpat dictumst, at ut habitant dignissim dictumst suscipit commodo, quis laoreet maecenas fusce. Cursus massa odio. Ligula tortor elementum in ac bibendum justo, enim diam laoreet nullam mauris consequat donec, id vitae. Augue mollis nonummy quis nec nec, vel lorem gravida, sit nulla, ipsum per tincidunt lacus odio. Nibh sit, euismod nec, sed a vestibulum eros, dapibus eget elit at integer. Convallis est in maecenas ac massa sit, suscipit vehicula risus adipiscing, non sollicitudin pede facilisis, erat sed mauris id mollitia qui, erat eu consequat id eu ipsum. Dolor neque donec vestibulum et var
+    </div>
 
   </div>
 </div>
@@ -135,13 +111,18 @@ body, html {
 <div class="w3-container" id="contactUs">
   <div class="w3-content" style="max-width:1000px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:30px">CONTACT US</span></h5>
-    Phone: 647-239-2345
+    **** ****<br/>
+    **** **** **** ****, **** ****<br/>
+    ****, **** **** ****<br/>
+    (***) ***-****<br/>
+    ****@****.***<br/>
+    Send us a message!
       <form method="POST" action="https://formspree.io/haochenji@yahoo.com">
         <input class="w3-input w3-padding-16 w3-border" name="email" placeholder="Your email" type="email" size="50" maxlength="40" required> <br/>
         <input class="w3-input w3-padding-16 w3-border" name="name" placeholder="Your name" type="text" size="50" maxlength="40" required> <br/>
 
         <textarea class="w3-input w3-padding-16 w3-border" name="message" placeholder="Your message"  size="50" required></textarea> <br/>
-        <button class="w3-button w3-black" type="submit">Send</button>
+        <button class="w3-button w3-black" style="margin-bottom:10px" type="submit">Send</button><br/>
       </form>
   </div>
 </div>
@@ -151,7 +132,14 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-large">
-  
+  <div class="w3-xlarge w3-section">
+    <a href="#"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
 </footer>
 </body>
 </html>
